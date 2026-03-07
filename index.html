@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Holiday</title>
+  <meta name="description"
+    content="Paket Tour Gunung Bromo Start Surabaya Berangkat Setiap Hari dengan fasilitas lengkap dan harga hemat." />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>document.documentElement.style.setProperty('--real-vh', window.innerHeight + 'px');</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="./" class="logo logo-img-link">
+        <img src="./aset/logo.png" alt="Smart Holiday" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="./">Home</a>
+        <a href="#packages">Paket Tour</a>
+        <a href="#pricing">Harga</a>
+      </div>
+      <a href="https://wa.me/6281252909674" class="btn-primary btn-nav">Pesan Sekarang</a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Slider Section -->
+  <header class="hero slider-container" id="hero-slider">
+    <!-- Slide 1: Bromo (Domestik) -->
+    <div class="slide active">
+      <img class="hero-bg" src="aset/tes.jpg" alt="Gunung Bromo">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge fade-in-up">🏔️ Paket Domestik</span>
+        <h1 class="fade-in-up delay-1">Paket Tour<br>Gunung Bromo</h1>
+        <p class="fade-in-up delay-2">Saksikan sunrise spektakuler di atas lautan awan Bromo yang menakjubkan.</p>
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="./bromo.html" class="btn-primary">Lihat Paket</a>
+          <a href="https://wa.me/6281252909674" class="btn-secondary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2: Bali (Domestik) -->
+    <div class="slide">
+      <img class="hero-bg" src="aset/tes.jpg" alt="Pulau Bali">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge fade-in-up">🌴 Paket Domestik</span>
+        <h1 class="fade-in-up delay-1">Paket Tour<br>Pulau Bali</h1>
+        <p class="fade-in-up delay-2">Rasakan pesona pantai, pura suci, dan budaya memukau di Pulau Dewata.</p>
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="./bali.html" class="btn-primary">Lihat Paket</a>
+          <a href="https://wa.me/6281252909674" class="btn-secondary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3: Jepang (Internasional) -->
+    <div class="slide">
+      <img class="hero-bg" src="aset/tes.jpg" alt="Jepang">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge fade-in-up">✈️ Paket Internasional</span>
+        <h1 class="fade-in-up delay-1">Paket Tour<br>Jepang</h1>
+        <p class="fade-in-up delay-2">Nikmati musim sakura, kuil kuno Tokyo, dan kuliner khas Jepang yang autentik.</p>
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="./jepang.html" class="btn-primary">Lihat Paket</a>
+          <a href="https://wa.me/6281252909674" class="btn-secondary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4: Dubai (Internasional) -->
+    <div class="slide">
+      <img class="hero-bg" src="aset/tes.jpg" alt="Dubai">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge fade-in-up">🌆 Paket Internasional</span>
+        <h1 class="fade-in-up delay-1">Paket Tour<br>Dubai</h1>
+        <p class="fade-in-up delay-2">Kota futuristik dengan Burj Khalifa, desert safari, dan belanja mewah kelas dunia.
+        </p>
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="./dubai.html" class="btn-primary">Lihat Paket</a>
+          <a href="https://wa.me/6281252909674" class="btn-secondary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="slider-btn prev-btn" aria-label="Previous slide">❮</button>
+    <button class="slider-btn next-btn" aria-label="Next slide">❯</button>
+    <div class="slider-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+  </header>
+
+
+  <!-- Overview Section -->
+  <section id="overview" class="section overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text slide-in-left">
+          <h2 class="section-title">Solusi Liburan Terbaik Anda</h2>
+          <p class="subtitle">Ingin berlibur ke destinasi impian tapi bingung mulai dari mana? Kami hadir untuk membantu
+            perjalanan Anda dari A sampai Z.</p>
+          <p><strong>SmartTour</strong> menyediakan berbagai pilihan paket wisata domestik dan internasional dengan
+            layanan profesional, fasilitas lengkap, dan harga terbaik.</p>
+          <ul class="feature-list">
+            <li><span class="icon">✓</span> <strong>Penjemputan Gratis:</strong> Hotel, Bandara, Stasiun, dan titik
+              antar jemput lainnya</li>
+            <li><span class="icon">✓</span> <strong>Jadwal Fleksibel:</strong> Berangkat setiap hari sesuai keinginan
+              Anda</li>
+            <li><span class="icon">✓</span> <strong>All in One:</strong> Transportasi + Tiket Masuk + Guide sudah
+              termasuk</li>
+            <li><span class="icon">✓</span> <strong>Paket Domestik & Internasional:</strong> Berbagai pilihan destinasi
+              pilihan</li>
+          </ul>
+        </div>
+        <div class="overview-images slide-in-right">
+          <!-- Overview Image Slider -->
+          <div class="overview-slider" id="overviewSlider">
+            <div class="ov-slides-track">
+              <div class="ov-slide active">
+                <img src="foto-ini.jpg" alt="Tour 1">
+              </div>
+              <div class="ov-slide">
+                <img src="foto-ini.jpg" alt="Tour 2">
+              </div>
+              <div class="ov-slide">
+                <img src="foto-ini.jpg" alt="Tour 3">
+              </div>
+            </div>
+            <!-- Dots -->
+            <div class="ov-dots">
+              <span class="ov-dot active" data-ov="0"></span>
+              <span class="ov-dot" data-ov="1"></span>
+              <span class="ov-dot" data-ov="2"></span>
+            </div>
+            <!-- Arrows -->
+            <button class="ov-btn ov-prev" aria-label="prev">&#10094;</button>
+            <button class="ov-btn ov-next" aria-label="next">&#10095;</button>
+            <!-- Floating review card -->
+            <div class="floating-card glassmorphism">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>"Pelayanan ramah, perjalanan menyenangkan, sangat direkomendasikan!"</p>
+              <span class="author">- Sarah T.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="section destinations bg-light">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">Paket Tour</h2>
+        <p>Tersedia dua jenis paket wisata pilihan: domestik dan internasional untuk semua impian perjalanan Anda.</p>
+      </div>
+      <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 40px;">
+        <!-- Card Domestik -->
+        <a href="./domestic.html" class="card destination-card zoom-in" style="position:relative; overflow:hidden;">
+          <img src="foto-ini.jpg" alt="Paket Domestik" style="height:320px;">
+          <div class="package-category-badge"
+            style="position:absolute;top:20px;left:20px;background:var(--primary);color:#fff;padding:6px 16px;border-radius:50px;font-weight:700;font-size:0.9rem;">
+            🌴 Domestik</div>
+          <div class="card-content">
+            <h3 style="font-size:1.5rem;">Paket Wisata Domestik</h3>
+            <p>Jelajahi keindahan nusantara: Bromo, Bali, Jogja, Lombok, Raja Ampat dan masih banyak lagi.</p>
+            <span
+              style="display:inline-block;margin-top:12px;color:var(--primary);font-weight:700;font-size:1rem;">Lihat
+              Semua Paket →</span>
+          </div>
+        </a>
+        <!-- Card Internasional -->
+        <a href="./international.html" class="card destination-card zoom-in delay-1"
+          style="position:relative; overflow:hidden;">
+          <img src="foto-ini.jpg" alt="Paket Internasional" style="height:320px;">
+          <div class="package-category-badge"
+            style="position:absolute;top:20px;left:20px;background:#3b82f6;color:#fff;padding:6px 16px;border-radius:50px;font-weight:700;font-size:0.9rem;">
+            ✈️ Internasional</div>
+          <div class="card-content">
+            <h3 style="font-size:1.5rem;">Paket Wisata Internasional</h3>
+            <p>Wujudkan impian liburan ke mancanegara: Jepang, Korea, Thailand, Turki, Dubai dan banyak lagi.</p>
+            <span style="display:inline-block;margin-top:12px;color:#3b82f6;font-weight:700;font-size:1rem;">Lihat Semua
+              Paket →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="fade-in-up">Siap untuk petualangan Anda?</h2>
+      <p class="fade-in-up delay-1">Hubungi tim CS kami untuk konsultasi perjalanan wisata Anda secara GRATIS!</p>
+      <a href="https://wa.me/6281252909674" class="btn-cta fade-in-up delay-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.012 2C6.486 2 2 6.486 2 12.013c0 1.93.551 3.738 1.498 5.258L2 22l4.895-1.478c1.47.886 3.193 1.396 5.035 1.488L12 22.011h.014c5.525 0 10.012-4.487 10.012-10.013C22.026 6.486 17.539 2 12.012 2zm0 18.337l-.012.001h-.005c-1.637-.087-3.19-.575-4.542-1.393L6.953 18.64l-2.915.88.895-2.883-.342-.519C3.605 14.809 3.082 13.447 3.082 12.011c0-4.93 4.009-8.937 8.93-8.937 4.922 0 8.932 4.007 8.932 8.937 0 4.931-4.01 8.938-8.932 8.926zm4.996-6.491c-.274-.138-1.623-.8-1.875-.892-.25-.09-.434-.138-.616.138-.184.276-.708.892-.867 1.076-.16.183-.32.206-.595.068-2.027-.999-3.219-1.956-4.223-3.666-.115-.194-.01-.295.127-.432.124-.124.275-.32.412-.48.138-.161.183-.277.275-.461.092-.184.045-.345-.024-.483-.068-.138-.616-1.487-.843-2.038-.222-.538-.445-.466-.615-.475-.16-.008-.344-.01-.527-.01-.184 0-.482.069-.733.345-.252.275-.963.938-.963 2.29s.986 2.657 1.123 2.84c.138.184 1.936 2.956 4.695 4.148 2.251.975 2.903.882 3.425.803.585-.088 1.623-.664 1.852-1.307.229-.643.229-1.194.16-1.308-.069-.112-.252-.181-.527-.319z"
+            fill="currentColor" />
+        </svg>
+        Konsultasi & Reservasi via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container fade-in-up delay-1">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Smart <span>Holiday</span></h3>
+          <p>CV. Smart Tour, kami merupakan perusahaan layanan jasa tour and travel yang berkantor pusat di
+            Purwokerto dan melayani berbagai paket wisata domestik maupun internasional dengan layanan terbaik.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="#packages">Paket Tour</a></li>
+            <li><a href="#pricing">Harga Paket</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Hubungi Kami</h4>
+          <p>📍 Jl. nlabla</p>
+          <p>📞 +62 812-5290-9674</p>
+          <p>✉️ info@smarttour.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Tour. All rights reserved. | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
